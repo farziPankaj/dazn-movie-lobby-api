@@ -20,9 +20,7 @@
     1. [http://localhost:8800](http://localhost:8800/)/v1/
 7. To see - how project can handle a random request (route), run following
     1. http://localhost:8800/v1/something
-8. You can import following postman api collection into your postman for the api and running them on your local machine
-    1. https://api.postman.com/collections/38015152-3f0b8bf2-9658-4078-b864-a137ba733ee2?access_key=PMAT-01JG260P7HE1WY2B4D5HQQ4Q9V
-9. To add movie into db, import following in postman and run it
+8. To add movie into db, import following in postman and run it
     - curl request
         ```jsx
         curl --location 'http://127.0.0.1:8800/v1/movies' \
@@ -36,18 +34,18 @@
             "streamingLink":"https://www.youtube.com/watch?v=J_WobG--B4s"
         }'
         ```
-10. To fetch list of movie, import following into postman and run it
+9. To fetch list of movie, import following into postman and run it
     - curl request
         
         ```jsx
         curl --location 'http://localhost:8800/v1/movies'
         ```
-11. To get a movie based on title or genre, import following and run it
+10. To get a movie based on title or genre, import following and run it
     - curl request
         ```jsx
         curl --location 'http://localhost:8800/v1/search?q=comedy'
         ```
-12. To update a movie, import following and run it
+11. To update a movie, import following and run it
     - curl request
         
         ```jsx
@@ -62,7 +60,7 @@
             "streamingLink":"https://www.youtube.com/watch?v=FXflfh5jdIc"
         }'
         ```
-13. To delete a movie, import following and run it
+12. To delete a movie, import following and run it
     - curl request
         ```jsx
         curl --location --request DELETE 'http://localhost:8800/v1/movies/676da781a6f378d91b7d74dd' \
@@ -71,7 +69,7 @@
             "role": ["admin"]
         }'
         ```
-14. To see unhappy cases of these api, one has to visit middleware layer and then have to make changes in req body and made the request for observing those unhappy cases.
+13. To see unhappy cases of these api, one has to visit middleware layer and then have to make changes in req body and made the request for observing those unhappy cases.
 
 ### Steps I followed to create the Project:
 
@@ -98,3 +96,7 @@
 10. To run project with nodemon, made some changes in “script” inside package.json
 11. Made project folder structure inside src
 12. And started working on project
+
+
+### Note:
+I deliberately not put .env file into .gitignore and I know came inside best practices to put .env file .gitignore
