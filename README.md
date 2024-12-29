@@ -13,7 +13,8 @@
     2. redis default port is 6379
     3. if not then these both has to be up and running on their default port
 4. open terminal at project location and execute following command
-    1. npm i
+    1. npm i & then
+    2. npm run dev
 5. To see whether project is running or not, run following in web browser
     1. [http://localhost:8800](http://localhost:8800/)
 6. To see whether flow is reaching till route layer, run following in web browser
